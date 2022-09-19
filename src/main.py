@@ -19,8 +19,8 @@ def __leaked(password):
         warnings.warn("Unable to check if password {} is leaked".format(password))
         return False
 
-    for l in result.text.splitlines():
-        part_hash, count = l.split(':')
+    for line in result.text.splitlines():
+        part_hash, count = line.split(':')
         if part_hash in digest:
             warnings.warn("Password {} has been used at least {} times".format(password, count))
             return True

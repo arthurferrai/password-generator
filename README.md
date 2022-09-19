@@ -1,5 +1,7 @@
 # Password Generator
 
+[![Testing](https://github.com/arthurferrai/password-generator/actions/workflows/python-tests.yml/badge.svg)](https://github.com/arthurferrai/password-generator/actions/workflows/python-tests.yml)
+
 The aim of this project is to generate a password that:
 * is random (or at least looks like)
 * is hard to guess (consequently hard to remember)
